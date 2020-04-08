@@ -1,14 +1,120 @@
-html{
-    box-sizing: border-box;
+@import 'vars';
+@import 'global';
+@import 'fonts';
+
+
+.header__top {
+    background-color: $bg;
+
+    &-inner {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 100px;
+        padding-left: 7px;
+    }
 }
-*,
-*::before,
-*::after{
-    box-sizing: inherit;
+
+.header__seller {
+    display: flex;
+    align-items: center;
+
+    &-btn {
+        font-size: 14px;
+        line-height: 28px;
+        padding: 4px 18px;
+        color: #fff;
+        background-color: $blue;
+        border-radius: 18px;
+        margin-right: 50px;
+        height: 36px;
+    }
 }
-body{
-    background-color: blue;
+
+.header__profile-img {
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    background-position: center;
+    display: inline-block;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-right: 20px;
 }
-.box{
-    display: flex; 
+
+.header__profile {
+    align-items: center;
+
+    &-name {
+        font-size: 16px;
+        color: $text;
+        font-weight: 500;
+        line-height: 22px;
+    }
+
+    &-price {
+        font-size: 15px;
+        right: 0;
+        display: block;
+    }
+
+}
+
+.menu__top {   
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 80px;
+    font-size: 15px;
+
+}
+
+.menu__top-list {
+    li {
+        display: inline-block;
+
+        &+li {
+            margin-left: 33px;
+        }
+
+    }
+
+    a {
+        color: $text;
+        line-height: 42px;
+        font-weight: 500;
+        text-transform: uppercase;
+        transition: all .3s ease;
+
+        &:hover {
+            color: $hover;
+        }
+    }
+
+}
+
+.menu__top-search {
+    position: relative;
+
+    input {
+        border-radius: 23px;
+        background-color: #ffffff;
+        border: 1px solid #d9dfe5;
+        padding: 14px 80px 14px 25px;
+
+        &::placeholder {
+            color: #898f96;
+        }
+    }
+
+    button {
+        position: absolute;
+        right: 0;
+        height: 48px;
+        width: 70px;
+        border: none;
+        border-radius: 23px;
+        background-color: #0674ec;
+
+    }
 }
