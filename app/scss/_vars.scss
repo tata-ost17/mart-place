@@ -2,3 +2,14 @@ $bg: #eef1f3;
 $blue: #0674ec;
 $text: #333;
 $hover: #7347c1;
+
+
+@mixin f700 {
+   font-family: 'Quicksand', sans-serif;
+   font-weight: 700;
+}
+
+@mixin f500 {
+   font-family: 'Quicksand', sans-serif;
+   font-weight: 500;
+}
