@@ -9,81 +9,170 @@
       href="https://fonts.googleapis.com/css2?family=Quicksand:wght@500;700&display=swap"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdn.linearicons.com/free/1.0.0/icon-font.min.css"
+    />
     <link rel="stylesheet" href="css/libs.min.css" />
     <link rel="stylesheet" href="css/style.min.css" />
   </head>
   <body>
-    <header class="header">
-      <div class="header__top">
-        <div class="container">
-          <div class="header__top-inner">
-            <div class="header__logo">
-              <a href="#">
-                <img src="images/logo.png" alt="" />
-              </a>
-            </div>
-            <div class="header__seller">
-              <a class="header__seller-btn" href="#">Become a Seller</a>
-              <div class="header__seller-communication"></div>
-              <a
-                class="header__profile-img"
-                href="#"
-                style="background-image: url(images/user.png);"
-              ></a>
-              <div class="header__profile">
-                <a class="header__profile-name" href="#">Taofiq Hakim</a>
-                <a class="header__profile-price" href="#">$20.45</a>
+    <div class="wrapper">
+      <div class="content">
+        <header class="header">
+          <div class="header__top">
+            <div class="container">
+              <div class="header__top-inner">
+                <div class="header__logo">
+                  <a href="#">
+                    <img src="images/content/logo.png" alt="" />
+                  </a>
+                </div>
+
+                <a class="header__btn" href="#">Become a Seller</a>
+                <div class="header__box">
+                  <div class="notification__box">
+                    <a class="notification" href="#">
+                      <span class="lnr lnr-alarm"></span>
+                      <span class="circle circle—red">25</span>
+                    </a>
+                  </div>
+
+                  <div class="message__box">
+                    <a class="message" href="#">
+                      <span class="lnr lnr-envelope"></span>
+                      <span class="circle circle—green">6</span>
+                    </a>
+                  </div>
+
+                  <div class="basket__box">
+                    <a class="basket" href="#">
+                      <span class="lnr lnr-cart"></span>
+                      <span class="circle circle—blue">2</span>
+                    </a>
+                  </div>
+
+                  <div class="user__box">
+                    <a class="user" href="#">
+                      <div class="user__inner">
+                        <div class="user__images">
+                          <img src="images/content/user.png" alt="" />
+                        </div>
+                        <div class="user__info">
+                          <div class="user__name">Taofiq Hakim</div>
+                          <div class="user__money">$20.45</div>
+                        </div>
+                      </div>
+                    </a>
+                  </a>
+                </div>
               </div>
             </div>
           </div>
-        </div>
-      </div>
-      <div class="header__menu">
-        <div class="container">
-          <div class="menu__top">
-            <nav class="menu">
-              <ul class="menu__top-list">
-                <li><a href="#">HOME</a></li>
-                <li><a href="#">all products</a></li>
-                <li><a href="#">wordpress</a></li>
-                <li><a href="#">festures</a></li>
-                <li><a href="#"> Pages</a></li>
-              </ul>
-            </nav>
-            <div class="menu__top-search">
-              <form>
-                <input
-                  type="text"
-                  placeholder="Search product here..."
-                  required
-                />
-                <button
-                  type="search"
-                  style="background-image: url(images/icons/search.png);"
-                ></button>
-              </form>
+          <div class="header__menu">
+            <div class="container">
+              <div class="menu__top">
+                <nav class="menu">
+                  <ul class="menu__top-list">
+                    <li><a href="#">HOME</a></li>
+                    <li><a href="#">all products</a></li>
+                    <li><a href="#">wordpress</a></li>
+                    <li><a href="#">festures</a></li>
+                    <li><a href="#"> Pages</a></li>
+                  </ul>
+                </nav>
+                <div class="menu__top-search">
+                  <form>
+                    <input
+                      type="text"
+                      placeholder="Search product here..."
+                      required
+                    />
+                    <button
+                      type="search"
+                      style="background-image: url(images/icons/search.png);"
+                    ></button>
+                  </form>
+                </div>
+              </div>
             </div>
           </div>
-        </div>
+        </header>
+        <section class="search">
+          <div class="container">
+            <div class="search__wrapper">
+              <div class="search__title">
+                Create Your Own
+              </div>
+              <div class="search__subtitle">
+                Digital Product Marketplace
+              </div>
+              <div class="search__text">
+                MartPlace is the most powerful, & customizable template for Easy
+                Digital Downloads Products
+              </div>
+              <div class="search__btn">
+                <a href="#">View All Products</a>
+                <a>Popular Products</a>
+              </div>
+              <div class="search__form">
+                <div class="search__product">
+                  <form>
+                    <input
+                      type="search"
+                      placeholder="Search your products..."
+                      required
+                    />
+                  </form>
+                  <a class="categories" href="#"
+                    >All Categories<span class="lnr lnr-chevron-down"></span
+                  ></a>
+                </div>
+                <button>Search Now</button>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="advantages">
+          <div class="container">
+            <div class="advantages__inner">
+              <div class="advantages__item">
+                <div class="advantages__item-img">
+                  <img src="images/content/best-1.png" alt="">
+                </div>
+                <div class="advantages__item-title">Best UX Research</div>
+                <div class="advantages__item-text">Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque 
+the mattis, leo quam aliquet diam
+congue is laoreet elit metus.</div>
+              </div>
+              <div class="advantages__item">
+                <div class="advantages__item-img">
+                  <img src="images/content/best-2.png" alt="">
+                </div>
+                <div class="advantages__item-title">Fully Responsive</div>
+                <div class="advantages__item-text">
+                  Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque 
+                  the mattis, leo quam aliquet diam
+                  congue is laoreet elit metus.</div>
+              </div>
+              <div class="advantages__item">
+                <div class="advantages__item-img">
+                  <img src="images/content/best-3.png" alt="">
+                </div>
+                <div class="advantages__item-title">Buy & Sell Easily</div>
+                <div class="advantages__item-text">
+                  Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque 
+                  the mattis, leo quam aliquet diam
+                  congue is laoreet elit metus.</div>
+              </div>
+            </div>
+          </div>
+        </section>
       </div>
-    </header>
-    <section class="search">
-      <div class="container">
-        <div class="search__title">
-          Create Your Own </div>
-        <div class="search__subtitle">
-          Digital Product Marketplace
-        </div>
-        <div class="search__text">
-          MartPlace is the most powerful, & customizable template for Easy Digital Downloads Products
-        </div>
-        <div class="search__btn">
-          <button>View All Products</button>
-          <button>Popular Products</button>
-        </div>
-      </div>
-    </section>
+      <footer class="footer"></footer>
+    </div>
 
+    <script src="https://cdn.linearicons.com/free/1.0.0/svgembedder.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="js/libs.min.js"></script>
     <script src="js/main.min.js"></script>
