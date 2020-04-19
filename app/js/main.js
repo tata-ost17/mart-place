@@ -1,15 +1,16 @@
 $(function(){
    $('.rate-star').rateYo({
-      rating: 5,
+      rating: 4.5,
       starWidth: '17px',
       readOnly: true
    });
 
    $('.product-slider__inner').slick({
-      dots: true,
+      arrows: true,
       slidesToShow: 1,
       slidesToScroll: 1,
    });
+   
 
 
 });
