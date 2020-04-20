@@ -511,31 +511,39 @@ p {
     }
   }
 }
-// .products .product__item-img:hover {
-//   background-image: url(../images/content/img-hover.png);
-//   height: 230px;
-// }
+.item__hover{
+  position: relative;
+}
+.product__item-img:hover {
+  .images__hover {
+    display: block;
+  }
+}
 
-// .images__hover {
-//   height: 0px;
-//   background-repeat: no-repeat;
-
-//   background-position: center;
-//   background-size: cover;
-//   display: flex;
-//   justify-content: center;
-//   align-items: center;
-//   a {
-//     padding: 15px 30px;
-//     font-size: 15px;
-//     color: #fff;
-//     @include f500;
-//     border: 1px solid #f4f4f4;
-//     border-radius: 22px;
-//     transition: all 0.3s ease;
-//     &:hover {
-//       background-color: #fff;
-//       color: $blue;
-//     }
-//   }
-// }
+.images__hover {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  display: none;
+  min-height: 230px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  a {
+    padding: 15px 30px;
+    font-size: 15px;
+    color: #fff;
+    @include f500;
+    border: 1px solid #f4f4f4;
+    border-radius: 22px;
+    transition: all 0.3s ease;
+    &:hover {
+      background-color: #fff;
+      color: $blue;
+    }
+  }
+}
