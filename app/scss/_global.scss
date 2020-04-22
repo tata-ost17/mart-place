@@ -21,8 +21,10 @@ li {
 }
 
 body {
-   font-family: 'Quicksand', sans-serif;
+   font-family: "Quicksand", sans-serif;
    font-weight: 400;
+   font-size: 15px;
+   
 }
 .wrapper {
    display: flex;
@@ -51,5 +53,7 @@ body {
    background-color: #fff;
    align-items: center;
    width: 100%;
-   
+   padding: 40px 20px;
+   border-radius: 3px;
+   margin-bottom: 50px;   
 }

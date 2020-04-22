@@ -107,15 +107,9 @@
                     <option value="landing-page">landing page</option>
                   </select>
                 </div>
-                <div class="search__form-btn">
-                  <button>Search Now</button>
-                </div>
+                <button>Search Now</button>
               </form>
-
             </div>
-
-
-
           </div>
         </div>
       </section>
@@ -169,20 +163,21 @@
                   <div class="product__item-title">
                     One Page Resume Template
                   </div>
-                  <div class="product__item-subtitle">
-                    <div class="item__subtitle-1" style="background-image: url(images/content/subtitle-1.png);">
-                      <a href="#" class="subtitle-1">AazzTech</a>
+                  <div class="product__item-category">
+                    <div class="item__category-1" style="background-image: url(images/content/category-1.png);">
+                      <a href="#">AazzTech</a>
                     </div>
-                    <div class="item__subtitle-2" style="background-image: url(images/content/subtitle-2.png);">
-                      <a href="#" class="subtitle-2">WordPress</a>
+                    <div class="item__category-2" style="background-image: url(images/content/category-2.png);">
+                      <a href="#">WordPress</a>
                     </div>
                   </div>
-
-                  <p>Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque the mattis, leo
+                  <div class="product__item-text">
+                    Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque the mattis, leo
                     quam aliquet congue
                     placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque the mattis, leo quam
                     aliquet congue justo
-                    ut scelerisque.</p>
+                    ut scelerisque.
+                  </div>
                   <div class="product__item-link">
                     <a href="#">website</a>
                     <a href="#">plugin</a>
@@ -191,12 +186,12 @@
                   <div class="product__bottom">
                     <div class="product__bottom-price">$10 - $50</div>
                     <div class="product__bottom-statistic">
-                      <div class="statistic-like">
-                        <span class="lnr lnr-heart"><span>46</span></span>
-                      </div>
-                      <div class="statistic-sale">
-                        <span class="lnr lnr-cart"><span>634</span></span>
-                      </div>
+                      <a class="statistic-like lnr lnr-heart">
+                        46
+                      </a>
+                      <a class="statistic-sale lnr lnr-cart">
+                        634
+                      </a>
                     </div>
                     <div class="statistic-star">
                       <div class="rate-star"></div>
@@ -212,37 +207,35 @@
                   <div class="product__item-title">
                     One Page Resume Template
                   </div>
-
-                  <div class="product__item-subtitle">
-                    <div class="item__subtitle-1" style="background-image: url(images/content/subtitle-1.png);">
-                      <a href="#" class="subtitle-1">AazzTech</a>
+                  <div class="product__item-category">
+                    <div class="item__category-1" style="background-image: url(images/content/category-1.png);">
+                      <a href="#">AazzTech</a>
                     </div>
-                    <div class="item__subtitle-2" style="background-image: url(images/content/subtitle-2.png);">
-                      <a href="#" class="subtitle-2">WordPress</a>
+                    <div class="item__category-2" style="background-image: url(images/content/category-2.png);">
+                      <a href="#">WordPress</a>
                     </div>
                   </div>
-
-                  <p>Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque the mattis, leo
+                  <div class="product__item-text">
+                    Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque the mattis, leo
                     quam aliquet congue
                     placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque the mattis, leo quam
                     aliquet congue justo
-                    ut scelerisque.</p>
+                    ut scelerisque.
+                  </div>
                   <div class="product__item-link">
                     <a href="#">website</a>
                     <a href="#">plugin</a>
                     <a href="#">landing page</a>
                   </div>
                   <div class="product__bottom">
-                    <div class="bottom">
-                      <div class="product__bottom-price">$10 - $50</div>
-                      <div class="product__bottom-statistic">
-                        <div class="statistic-like lnr lnr-heart">
-                          <span>46</span>
-                        </div>
-                        <div class="statistic-sale lnr lnr-cart">
-                          <span>634</span>
-                        </div>
-                      </div>
+                    <div class="product__bottom-price">$10 - $50</div>
+                    <div class="product__bottom-statistic">
+                      <a class="statistic-like lnr lnr-heart">
+                        46
+                      </a>
+                      <a class="statistic-sale lnr lnr-cart">
+                        634
+                      </a>
                     </div>
                     <div class="statistic-star">
                       <div class="rate-star"></div>
@@ -259,73 +252,525 @@
           <div class="products__title title">Newest Release Products</div>
           <div class="products__inner">
             <div class="products__inner-btn">
-              <button type="button">Plugins</button>
-              <button type="button">WordPress</button>
-              <button type="button">Site Template</button>
-              <button type="button">PSD Template</button>
-              <button type="button">Joomla</button>
-              <button type="button">User Interface</button>
-              <button type="button">Landing Page</button>
-              <button type="button">Software</button>
+              <button type="button" data-filter=".category-plugins">Plugins</button>
+              <button type="button" data-filter=".category-wordpress">WordPress</button>
+              <button type="button" data-filter=".category-joomla">Site Template</button>
+              <button type="button" data-filter=".category-wordpress">PSD Template</button>
+              <button type="button" data-filter=".category-joomla">Joomla</button>
+              <button type="button" data-filter=".category-wordpress">User Interface</button>
+              <button type="button" data-filter=".category-wordpress">Landing Page</button>
+              <button type="button" data-filter=".category-plugins">Software</button>
             </div>
-            <div class="products__inner-box">
-              <div class="product__item">
-                <div class="item__hover">
-                  <div class="product__item-img" style="background-image: url(images/content/product-img.png);">
-                  </div>
-                  <div class="images__hover" style="background-image: url(images/content/img-hover.png);">
-
+          </div>
+          <div class="products__inner-box">
+            <div class="product__item mix category-joomla">
+              <div class="product__item-img products-img"
+                style="background-image: url(images/content/product-img.png);">
+                <div class="product__item-hover" style="background-image: url(images/content/img-hover.png);">
+                  <div class="item-hover">
                     <a href="#">More Info</a>
                     <a href="#">Live Demo</a>
-
                   </div>
                 </div>
+              </div>
+              <div class="product__item-info">
+                <div class="product__item-title">
+                  E-commerce Shopping Cart
+                </div>
 
+                <div class="product__item-category">
+                  <div class="item__category-1" style="background-image: url(images/content/category-1.png);">
+                    <a href="#">Theme-Valley</a>
+                  </div>
+                  <div class="item__category-2" style="background-image: url(images/content/category-2.png);">
+                    <a href="#">Plugin</a>
+                  </div>
+                </div>
+                <div class="product__item-text">
+                  Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque
+                  the mattis, leo quam aliquet congue
+                </div>
+                <div class="product__bottom">
+                  <div class="product__bottom-price">$20</div>
+                  <a class="statistic-like lnr lnr-heart">
+                    90
+                  </a>
+                  <div class="statistic-star">
+                    <div class="rate-star"></div>
+                  </div>
+                  <a class="statistic-sale lnr lnr-cart">
+                    246
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="product__item mix category-wordpress">
+              <div class="product__item-img products-img"
+                style="background-image: url(images/content/product-img1.png);">
+                <div class="product__item-hover" style="background-image: url(images/content/img-hover.png);">
+                  <div class="item-hover">
+                    <a href="#">More Info</a>
+                    <a href="#">Live Demo</a>
+                  </div>
+                </div>
+              </div>
+              <div class="product__item-info">
+                <div class="product__item-title">
+                  Marketify Coffee Shop
+                </div>
+
+                <div class="product__item-category">
+                  <div class="item__category-1" style="background-image: url(images/content/category-1.png);">
+                    <a href="#">EchoTheme</a>
+                  </div>
+                  <div class="item__category-2" style="background-image: url(images/content/category-3.png);">
+                    <a href="#">PSD</a>
+                  </div>
+                </div>
+                <div class="product__item-text">
+                  Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque
+                  the mattis, leo quam aliquet congue
+                </div>
+                <div class="product__bottom">
+                  <div class="product__bottom-price">$18</div>
+                  <a class="statistic-like lnr lnr-heart">
+                    48
+                  </a>
+                  <div class="statistic-star">
+                    <div class="rate-stars"></div>
+                  </div>
+                  <a class="statistic-sale lnr lnr-cart">
+                    50
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="product__item  mix category-plugins">
+              <div class="product__item-img products-img"
+                style="background-image: url(images/content/product-img.png);">
+                <div class="product__item-hover" style="background-image: url(images/content/img-hover.png);">
+                  <div class="item-hover">
+                    <a href="#">More Info</a>
+                    <a href="#">Live Demo</a>
+                  </div>
+                </div>
+              </div>
+              <div class="product__item-info">
+                <div class="product__item-title">
+                  Bryson - Portfolio Template
+                </div>
+
+                <div class="product__item-category">
+                  <div class="item__category-1" style="background-image: url(images/content/category-1.png);">
+                    <a href="#">Artcorner</a>
+                  </div>
+                  <div class="item__category-2" style="background-image: url(images/content/category-4.png);">
+                    <a href="#">HTML</a>
+                  </div>
+                </div>
+                <div class="product__item-text">
+                  Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque
+                  the mattis, leo quam aliquet congue
+                </div>
+                <div class="product__bottom bottom-star">
+                  <div class="product__bottom-price">$10</div>
+                  <a class="statistic-like lnr lnr-heart">
+                    56
+                  </a>
+                  <div class="statistic-star">
+                    <div class="rate-stars"></div>
+                  </div>
+                  <a class="statistic-sale lnr lnr-cart">
+                    68
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="product__item  mix category-joomla">
+              <div class="product__item-img products-img"
+                style="background-image: url(images/content/product-img.png);">
+                <div class="product__item-hover" style="background-image: url(images/content/img-hover.png);">
+                  <div class="item-hover">
+                    <a href="#">More Info</a>
+                    <a href="#">Live Demo</a>
+                  </div>
+                </div>
+              </div>
+              <div class="product__item-info">
+                <div class="product__item-title">
+                  E-commerce Shopping Cart
+                </div>
+
+                <div class="product__item-category">
+                  <div class="item__category-1" style="background-image: url(images/content/category-1.png);">
+                    <a href="#">Design-Hub</a>
+                  </div>
+                  <div class="item__category-2" style="background-image: url(images/content/category-2.png);">
+                    <a href="#">Plugin</a>
+                  </div>
+                </div>
+                <div class="product__item-text">
+                  Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque
+                  the mattis, leo quam aliquet congue
+                </div>
+                <div class="product__bottom bottom-star">
+                  <div class="product__bottom-price">$10-50</div>
+                  <a class="statistic-like lnr lnr-heart">
+                    90
+                  </a>
+                  <div class="statistic-star">
+                    <div class="rate-stars"></div>
+                  </div>
+                  <a class="statistic-sale lnr lnr-cart">
+                    45
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="product__item mix category-plugins">
+              <div class="product__item-img products-img"
+                style="background-image: url(images/content/product-img1.png);">
+                <div class="product__item-hover" style="background-image: url(images/content/img-hover.png);">
+                  <div class="item-hover">
+                    <a href="#">More Info</a>
+                    <a href="#">Live Demo</a>
+                  </div>
+                </div>
+              </div>
+              <div class="product__item-info">
+                <div class="product__item-title">
+                  Marketify Coffee Shop
+                </div>
+
+                <div class="product__item-category">
+                  <div class="item__category-1" style="background-image: url(images/content/category-1.png);">
+                    <a href="#">AazzTech</a>
+                  </div>
+                  <div class="item__category-2" style="background-image: url(images/content/category-3.png);">
+                    <a href="#">PSD</a>
+                  </div>
+                </div>
+                <div class="product__item-text">
+                  Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque
+                  the mattis, leo quam aliquet congue
+                </div>
+                <div class="product__bottom">
+                  <div class="product__bottom-price">$10-45</div>
+                  <a class="statistic-like lnr lnr-heart">
+                    48
+                  </a>
+                  <div class="statistic-star">
+                    <div class="rate-stars"></div>
+                  </div>
+                  <a class="statistic-sale lnr lnr-cart">
+                    50
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="product__item  mix category-wordpress">
+              <div class="product__item-img products-img"
+                style="background-image: url(images/content/product-img.png);">
+                <div class="product__item-hover" style="background-image: url(images/content/img-hover.png);">
+                  <div class="item-hover">
+                    <a href="#">More Info</a>
+                    <a href="#">Live Demo</a>
+                  </div>
+                </div>
+              </div>
+              <div class="product__item-info">
+                <div class="product__item-title">
+                  Bryson - Portfolio Template
+                </div>
+
+                <div class="product__item-category">
+                  <div class="item__category-1" style="background-image: url(images/content/category-1.png);">
+                    <a href="#">Coder-Lab</a>
+                  </div>
+                  <div class="item__category-2" style="background-image: url(images/content/category-4.png);">
+                    <a href="#">HTML</a>
+                  </div>
+                </div>
+                <div class="product__item-text">
+                  Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque
+                  the mattis, leo quam aliquet congue
+                </div>
+                <div class="product__bottom bottom-star">
+                  <div class="product__bottom-price">$10</div>
+                  <a class="statistic-like lnr lnr-heart">
+                    56
+                  </a>
+                  <div class="statistic-star">
+                    <div class="rate-stars"></div>
+                  </div>
+                  <a class="statistic-sale lnr lnr-cart">
+                    68
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="products__bottom-link">
+            <a href="#">
+              All New Items
+            </a>
+          </div>
+        </div>
+      </section>
+      <section class="followers-slider">
+        <div class="container">
+          <div class="followers-slider-title title">Your Followers Feed</div>
+
+          <div class="followers-slider__inner">
+            
+              <div class="product__item">
+                <div class="product__item-img products-img"
+                  style="background-image: url(images/content/product-img.png);">
+                  <div class="product__item-hover" style="background-image: url(images/content/img-hover.png);">
+                    <div class="item-hover">
+                      <a href="#">More Info</a>
+                      <a href="#">Live Demo</a>
+                    </div>
+                  </div>
+                </div>
                 <div class="product__item-info">
                   <div class="product__item-title">
                     E-commerce Shopping Cart
                   </div>
 
-                  <div class="product__item-subtitle">
-                    <div class="item__subtitle-1" style="background-image: url(images/content/subtitle-1.png);">
-                      <a href="#" class="subtitle-1">AazzTech</a>
+                  <div class="product__item-category">
+                    <div class="item__category-1" style="background-image: url(images/content/category-1.png);">
+                      <a href="#">Theme-Valley</a>
                     </div>
-                    <div class="item__subtitle-2" style="background-image: url(images/content/subtitle-2.png);">
-                      <a href="#" class="subtitle-2">WordPress</a>
+                    <div class="item__category-2" style="background-image: url(images/content/category-2.png);">
+                      <a href="#">Plugin</a>
                     </div>
                   </div>
-
-                  <p>Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque
-                    the mattis, leo quam aliquet congue.</p>
-
-                  <div class="product__bottom">
-
+                  <div class="product__item-text">
+                    Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque
+                    the mattis, leo quam aliquet congue
+                  </div>
+                  <div class="product__bottom bottom-star">
                     <div class="product__bottom-price">$20</div>
-
-                    <div class="statistic-like">
-                      <span class="lnr lnr-heart"><span>46</span></span>
-                    </div>
+                    <a class="statistic-like lnr lnr-heart">
+                      90
+                    </a>
                     <div class="statistic-star">
-                      <div class="rate-star"></div>
+                      <div class="rate-stars"></div>
                     </div>
-                    <div class="statistic-sale">
-                      <span class="lnr lnr-cart"><span>634</span></span>
-                    </div>
-
-
+                    <a class="statistic-sale lnr lnr-cart">
+                      246
+                    </a>
                   </div>
                 </div>
               </div>
+              <div class="product__item">
+                <div class="product__item-img products-img"
+                  style="background-image: url(images/content/product-img.png);">
+                  <div class="product__item-hover" style="background-image: url(images/content/img-hover.png);">
+                    <div class="item-hover">
+                      <a href="#">More Info</a>
+                      <a href="#">Live Demo</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="product__item-info">
+                  <div class="product__item-title">
+                    Marketify Coffee Shop
+                  </div>
 
+                  <div class="product__item-category">
+                    <div class="item__category-1" style="background-image: url(images/content/category-1.png);">
+                      <a href="#">EchoTheme</a>
+                    </div>
+                    <div class="item__category-2" style="background-image: url(images/content/category-3.png);">
+                      <a href="#">PSD</a>
+                    </div>
+                  </div>
+                  <div class="product__item-text">
+                    Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque
+                    the mattis, leo quam aliquet congue
+                  </div>
+                  <div class="product__bottom">
+                    <div class="product__bottom-price">$18</div>
+                    <a class="statistic-like lnr lnr-heart">
+                      48
+                    </a>
+                    <div class="statistic-star">
+                      <div class="rate-stars"></div>
+                    </div>
+                    <a class="statistic-sale lnr lnr-cart">
+                      50
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="product__item">
+                <div class="product__item-img products-img"
+                  style="background-image: url(images/content/product-img.png);">
+                  <div class="product__item-hover" style="background-image: url(images/content/img-hover.png);">
+                    <div class="item-hover">
+                      <a href="#">More Info</a>
+                      <a href="#">Live Demo</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="product__item-info">
+                  <div class="product__item-title">
+                    Bryson - Portfolio Template
+                  </div>
+                  <div class="product__item-category">
+                    <div class="item__category-1" style="background-image: url(images/content/category-1.png);">
+                      <a href="#">Artcorner</a>
+                    </div>
+                    <div class="item__category-2" style="background-image: url(images/content/category-4.png);">
+                      <a href="#">HTML</a>
+                    </div>
+                  </div>
+                  <div class="product__item-text">
+                    Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque
+                    the mattis, leo quam aliquet congue
+                  </div>
+                  <div class="product__bottom bottom-star">
+                    <div class="product__bottom-price">$10</div>
+                    <a class="statistic-like lnr lnr-heart">
+                      56
+                    </a>
+                    <div class="statistic-star">
+                      <div class="rate-stars"></div>
+                    </div>
+                    <a class="statistic-sale lnr lnr-cart">
+                      68
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="product__item">
+                <div class="product__item-img products-img"
+                  style="background-image: url(images/content/product-img.png);">
+                  <div class="product__item-hover" style="background-image: url(images/content/img-hover.png);">
+                    <div class="item-hover">
+                      <a href="#">More Info</a>
+                      <a href="#">Live Demo</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="product__item-info">
+                  <div class="product__item-title">
+                    E-commerce Shopping Cart
+                  </div>
 
-            </div>
-          </div>
-          <div class="products__bottom-btn">
-            <button type="button">
-              All New Items
-            </button>
+                  <div class="product__item-category">
+                    <div class="item__category-1" style="background-image: url(images/content/category-1.png);">
+                      <a href="#">Theme-Valley</a>
+                    </div>
+                    <div class="item__category-2" style="background-image: url(images/content/category-2.png);">
+                      <a href="#">Plugin</a>
+                    </div>
+                  </div>
+                  <div class="product__item-text">
+                    Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque
+                    the mattis, leo quam aliquet congue
+                  </div>
+                  <div class="product__bottom bottom-star">
+                    <div class="product__bottom-price">$10</div>
+                    <a class="statistic-like lnr lnr-heart">
+                      56
+                    </a>
+                    <div class="statistic-star">
+                      <div class="rate-stars"></div>
+                    </div>
+                    <a class="statistic-sale lnr lnr-cart">
+                      68
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="product__item">
+                <div class="product__item-img products-img"
+                  style="background-image: url(images/content/product-img.png);">
+                  <div class="product__item-hover" style="background-image: url(images/content/img-hover.png);">
+                    <div class="item-hover">
+                      <a href="#">More Info</a>
+                      <a href="#">Live Demo</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="product__item-info">
+                  <div class="product__item-title">
+                    E-commerce Shopping Cart
+                  </div>
+
+                  <div class="product__item-category">
+                    <div class="item__category-1" style="background-image: url(images/content/category-1.png);">
+                      <a href="#">Theme-Valley</a>
+                    </div>
+                    <div class="item__category-2" style="background-image: url(images/content/category-2.png);">
+                      <a href="#">Plugin</a>
+                    </div>
+                  </div>
+                  <div class="product__item-text">
+                    Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque
+                    the mattis, leo quam aliquet congue
+                  </div>
+                  <div class="product__bottom bottom-star">
+                    <div class="product__bottom-price">$10</div>
+                    <a class="statistic-like lnr lnr-heart">
+                      56
+                    </a>
+                    <div class="statistic-star">
+                      <div class="rate-stars"></div>
+                    </div>
+                    <a class="statistic-sale lnr lnr-cart">
+                      68
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="product__item">
+                <div class="product__item-img products-img"
+                  style="background-image: url(images/content/product-img.png);">
+                  <div class="product__item-hover" style="background-image: url(images/content/img-hover.png);">
+                    <div class="item-hover">
+                      <a href="#">More Info</a>
+                      <a href="#">Live Demo</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="product__item-info">
+                  <div class="product__item-title">
+                    E-commerce Shopping Cart
+                  </div>
+                  <div class="product__item-category">
+                    <div class="item__category-1" style="background-image: url(images/content/category-1.png);">
+                      <a href="#">Theme-Valley</a>
+                    </div>
+                    <div class="item__category-2" style="background-image: url(images/content/category-2.png);">
+                      <a href="#">Plugin</a>
+                    </div>
+                  </div>
+                  <div class="product__item-text">
+                    Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque
+                    the mattis, leo quam aliquet congue
+                  </div>
+                  <div class="product__bottom">
+                    <div class="product__bottom-price">$10</div>
+                    <a class="statistic-like lnr lnr-heart">
+                      56
+                    </a>
+                    <div class="statistic-star">
+                      <div class="rate-stars"></div>
+                    </div>
+                    <a class="statistic-sale lnr lnr-cart">
+                      68
+                    </a>
+                  </div>
+                </div>
+              </div>
+            
           </div>
         </div>
+
       </section>
     </div>
     <footer class="footer"></footer>
