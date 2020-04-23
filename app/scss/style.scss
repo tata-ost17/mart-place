@@ -731,9 +731,6 @@
 }
 // end choose
 // start shopping
-.shopping {
-  padding: 95px 0;
-}
 .shopping .container-fluid {
   padding: 0;
 }
@@ -741,14 +738,14 @@
   display: flex;
 }
 .shopping__item {
-  
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
   text-align: center;
   padding: 95px 180px 0px 180px;
   color: #fff;
   width: 100%;
   &.shopping-left {
-    background-color: $blue;
-    
     .shopping__btn {
       a {
         color: $blue;
@@ -772,21 +769,6 @@
     }
   }
 }
-// .shopping__shape{
-//   position: relative;
-//   .shape-1{
-//     position: absolute;
-//     bottom: 0;
-//     z-index: 6;
-//     opacity: 1;
-//   }
-//   .shape-2{
-//     position: absolute;
-//     bottom: 0;
-//     z-index: 5;
-//     opacity: 3;
-//   }
-// }
 .shopping__btn {
   margin-bottom: 95px;
   a {
@@ -795,7 +777,7 @@
     padding: 20px 30px;
     border-radius: 28px;
     transition: all 0.3 ease-in;
-    &:hover {      
+    &:hover {
       border: 1px solid #fff;
     }
   }
@@ -812,3 +794,58 @@
 }
 
 // end shopping
+// start feedback
+.feedback {
+  padding: 118px 0;
+}
+.feedback__wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+.feedback__client-photo {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.feedback__item {
+  padding: 50px 40px 25px;
+  border-left: 1px solid $blue;
+  box-shadow: 0px 2px 50px 0px rgba(0, 0, 0, 0.08);
+  max-width: 555px;
+}
+.feedback__client {
+  display: flex;
+  align-items: center;
+  margin-bottom: 30px;
+  position: relative;
+  .lnr-bubble:before {
+    position: absolute;
+    font-size: 60px;
+    color: #e8e8e8;
+    right: 0;
+    top: 0;
+  }
+}
+
+.feedback__client-photo {
+  margin-right: 18px;
+}
+.client-name {
+  font-size: 20px;
+  color: #000;
+  margin-bottom: 15px;
+  font-family: "Quicksand", sans-serif !important;
+}
+.client-prof {
+  font-size: 16px;
+  color: $main;
+  font-family: "Quicksand", sans-serif !important;
+}
+.feedback__wrapper{
+  margin-bottom: 60px;
+}
+
+// end feedback
