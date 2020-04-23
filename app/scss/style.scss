@@ -608,3 +608,46 @@
 }
 
 // end followers-slider
+// start statistics
+.statistics {
+  background-color: #212225;
+  padding: 189px 0 95px;
+}
+.statistics__inner {
+  display: flex;
+  justify-content: space-between;
+}
+.statistics__item {
+  text-align: center;
+}
+
+.statistics__number {
+  font-size: 36px;
+  position: relative;
+  margin-bottom: 20px;
+  &.lnr-briefcase {
+    color: #feb71d;
+  }
+  &.lnr-cloud-download {
+    color: #58c9e9;
+  }
+  &.lnr-smile {
+    color: #77de51;
+  }
+  &.lnr-users {
+    color: #ff6a6d;
+  }
+  &::before {
+    position: absolute;
+    font-size: 48px;
+    top: -85px;
+    right: 0;
+    left: 0;
+  }
+}
+
+.statistics__state {
+  font-size: 18px;
+  color: #fff;
+}
+// end statistics
