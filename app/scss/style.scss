@@ -922,3 +922,28 @@
   }
 }
 // end guarant
+// start join
+.join__wrapper{
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  text-align: center;
+  padding-top: 107px;
+  .search__title{
+    font-size: 36px;
+    color: #fff;
+  }
+  .search__text{
+    font-size: 18px;
+    color: #fff;
+  }
+  .search__btn{
+    padding-bottom: 107px;
+    a{
+      padding: 18px 44px;
+      background-color: #fff;
+      color: $blue;
+    }
+  }
+}
+// end join
