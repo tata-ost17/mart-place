@@ -801,6 +801,7 @@
 .feedback__wrapper {
   display: flex;
   justify-content: space-between;
+  margin-bottom: 60px;
 }
 .feedback__client-photo {
   width: 80px;
@@ -844,8 +845,80 @@
   color: $main;
   font-family: "Quicksand", sans-serif !important;
 }
-.feedback__wrapper{
-  margin-bottom: 60px;
-}
-
 // end feedback
+// start news
+.news {
+  background-color: #eff1f5;
+  padding: 118px 0;
+}
+.news__inner {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 -15px;
+  .product__item {
+    display: block;
+    padding: 0px 15px;
+    flex: 0 1 33.333%;
+    box-shadow: none;
+    &-info {
+      padding: 30px 30px 10px;
+    }
+    &-title {
+      font-size: 22px;
+      color: #000;
+      @include f500;
+    }
+    &-text {
+      margin-bottom: 0;
+    }
+  }
+  .product__bottom {
+    padding: 20px 30px;
+    background-color: #fff;
+    align-items: center;
+    &-date {
+      font-size: 15px;
+      color: #999;
+      &:hover {
+        color: $hover;
+      }
+      span {
+        font-size: 15px;
+        color: $blue;
+        margin-right: 8px;
+      }
+    }
+    .statistic-like,
+    .statistic-view {
+      color: #7e7e7e;
+      &:hover {
+        color: $hover;
+      }
+    }
+  }
+}
+// end news
+// start guarant
+.guarantee {
+  padding: 60px 0;
+}
+.guarantee__inner {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  text-align: center;
+}
+.guarantee__item-text {
+  margin-top: 30px;
+  font-size: 24px;
+  color: #000;
+  span {
+    color: $blue;
+  }
+  & .guarantee__item-right {
+    span {
+      color: $hover;
+    }
+  }
+}
+// end guarant
