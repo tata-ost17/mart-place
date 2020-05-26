@@ -22,20 +22,20 @@
 }
 
 @font-face {
-  font-family: "icomoon";
-  src: url("../fonts/icomoon.eot?ohvm0o");
-  src: url("../fonts/icomoon.eot?ohvm0o#iefix") format("embedded-opentype"),
-    url("../fonts/icomoon.ttf?ohvm0o") format("truetype"), url("../fonts/icomoon.woff?ohvm0o") format("woff"),
-    url("../fonts/icomoon.svg?ohvm0o#icomoon") format("svg");
+  font-family: 'icomoon';
+  src:  url('fonts/icomoon.eot?tmuo0d');
+  src:  url('fonts/icomoon.eot?tmuo0d#iefix') format('embedded-opentype'),
+    url('fonts/icomoon.ttf?tmuo0d') format('truetype'),
+    url('fonts/icomoon.woff?tmuo0d') format('woff'),
+    url('fonts/icomoon.svg?tmuo0d#icomoon') format('svg');
   font-weight: normal;
   font-style: normal;
   font-display: block;
 }
 
-[class^="icon-"],
-[class*=" icon-"] {
+[class^="icon-"], [class*=" icon-"] {
   /* use !important to prevent issues with browser extensions that change fonts */
-  font-family: "icomoon" !important;
+  font-family: 'icomoon' !important;
   speak: none;
   font-style: normal;
   font-weight: normal;
@@ -60,12 +60,15 @@
 .icon-pinterest:before {
   content: "\f0d2";
 }
-.icon-google-plus-square:before {
-  content: "\f0d4";
-}
 .icon-linkedin:before {
   content: "\f0e1";
 }
+.icon-circle-o:before {
+  content: "\f10c";
+}
 .icon-dribbble:before {
   content: "\f17d";
+}
+.icon-google:before {
+  content: "\f1a0";
 }

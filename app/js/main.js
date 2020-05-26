@@ -5,6 +5,7 @@ $(function(){
    $(".filter-down").on("click", function () {
       $(".filter-products__list").slideToggle();;
    });
+   
 
    $('.rate-star').rateYo({
       rating: 4.5,
@@ -59,6 +60,15 @@ $(function(){
       $('.product-page__item').removeClass('list');
       $('.icon-grid').addClass('active');
       $('.icon-list').removeClass('active');
+   });
+
+   $('.template__tabs .tab').on('click', function (event) {
+      var id = $(this).attr('data-id');
+      $('.template__tabs').find('.tab-item').removeClass('active-tab').hide();
+      $('.template__tabs .tabs').find('.tab').removeClass('active');
+      $(this).addClass('active');
+      $('#' + id).addClass('active-tab').fadeIn();
+      return false;
    });
    
    
